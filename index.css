@@ -1,0 +1,183 @@
+/*O * significa que tudo no CSS funcionará no site*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    /*O outline é altura e largura*/
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.header-menu {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    padding: 8px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    height: 60px;
+    background-color: #724796;
+}
+
+.header-menu nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.lista-menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+}
+
+.lista-menu li>a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: inherit;
+}
+
+.principal {
+    height: 100vh;
+    display: flex;
+    background-color: #eaeaea;
+}
+
+
+/*O container pega a página toda e não precisa estar no header (pois ele é o cabeçalho), ele faz a adaptação disposotivo para não desconfigurar*/
+
+.container {
+    margin-right: auto;
+    /*margem automatica para todos os lados*/
+    margin-left: auto;
+    /*margem esquerda*/
+    max-width: 960px;
+    /*margem automatica para todos os lados*/
+    padding-left: 100px;
+    /*espaçamento esquerdo*/
+    padding-right: 100px;
+    /*espaçamento direito*/
+    width: 100%;
+    /*largura*/
+}
+
+.subcontainer-principal {
+    display: flex;
+    flex-direction: column;
+    /*o column é uma coluna, um embaixo do outro*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*tudo o que tem dentro fica centralizado*/
+}
+
+.subcontainer-principal img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-end-start-radius: 50%;
+}
+
+.nome-completo {
+    font-size: 36px;
+    color: #ff4dbc;
+    font-weight: 700;
+    height: 45px;
+    /*altura da letra*/
+}
+
+.descricao {
+    text-align: center;
+}
+
+.profissao {
+    font-size: 20px;
+    line-height: 40px;
+    color: #c6b5d5;
+}
+
+.article-lista {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.topico-principal {
+    font-size: 36px;
+    color: #ff4dbc;
+}
+
+.lista-item {
+    padding: 32px;
+}
+
+.lista-item ul li {
+    margin-bottom: 32px;
+}
+
+.lista-titulo {
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: #661e4b;
+    font-weight: 700;
+}
+
+.lista-local {
+    font-size: 18px;
+    color: #2f80ed;
+}
+
+.lista-descricao {
+    font-size: 18px;
+    margin-top: 5px;
+    line-height: 20px;
+    color: #828282;
+    font-weight: 300;
+}
+
+.wrapper-portifolio {
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitulo-lista {
+    font-size: 18px;
+    color: #828282;
+    font-weight: 500;
+}
+
+.rodape {
+    display: flex;
+    background-color: #724796;
+    flex-direction: column;
+    padding: 100px;
+    /*o padding é o espaçamento dos 4 cantos*/
+}
+
+.sub-rodape ul li {
+    color: #fff;
+    padding-left: 50px;
+    line-height: 50px;
+    text-decoration: #fdfeff;
+}
+
+a:link,
+a:visited {
+    color: rgb(190, 101, 186);
+    text-decoration: underline;
+    cursor: auto;
+}
