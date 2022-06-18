@@ -180,6 +180,7 @@ li {
 .link {
     color: rgb(255, 255, 255);
     cursor: auto;
+    text-decoration: none;
 }
 
 .estilo-icon {
